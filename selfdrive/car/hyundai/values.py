@@ -871,6 +871,7 @@ FW_VERSIONS = {
   },
   CAR.TUCSON: {
     (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00NX4__               1.00 1.00 99110-N9100         ',
       b'\xf1\x00TL__ FCA F-CUP      1.00 1.01 99110-D3500         ',
       b'\xf1\x00TL__ FCA F-CUP      1.00 1.02 99110-D3510         ',
     ],
@@ -879,12 +880,22 @@ FW_VERSIONS = {
       b'\xf1\x81606G3051\x00\x00\x00\x00\x00\x00\x00\x00',
     ],
     (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00NX4 FR_CMR AT USA LHD 1.00 1.00 99211-CW000 14M',
       b'\xf1\x00TL  MFC  AT KOR LHD 1.00 1.02 95895-D3800 180719',
       b'\xf1\x00TL  MFC  AT USA LHD 1.00 1.06 95895-D3800 190107',
     ],
     (Ecu.transmission, 0x7e1, None): [
       b'\xf1\x87LBJXAN202299KF22\x87x\x87\x88ww\x87xx\x88\x97\x88\x87\x88\x98x\x88\x99\x98\x89\x87o\xf6\xff\x87w\x7f\xff\x12\x9a\xf1\x81U083\x00\x00\x00\x00\x00\x00\xf1\x00bcsh8p54  U083\x00\x00\x00\x00\x00\x00TTL2V20KL1\x8fRn\x8a',
       b'\xf1\x87KMLDCU585233TJ20wx\x87\x88x\x88\x98\x89vfwfwwww\x87f\x9f\xff\x98\xff\x7f\xf9\xf7s\xf1\x816T6G4051\x00\x00\xf1\x006T6J0_C2\x00\x006T6G4051\x00\x00TTL4G24NH2\x00\x00\x00\x00',
+    ],
+    (Ecu.cornerRadar, 0x7B7, None): [
+      b'\xf1\x003D',
+    ],
+    (Ecu.hvac, 0x7B3, None): [
+      b"\xf1\x00NX4a  97255-CW211CONTROL ASS'Y-DATC  1.05 NX4a DATC(-)1.0     ",
+    ],
+    (Ecu.parkingAdas, 0x7B1, None): [
+      b'\xf1\x10NX4  ADAS_PRK ANL 1.00 1.01 99910-CW100',
     ],
   },
   CAR.SANTA_FE: {
